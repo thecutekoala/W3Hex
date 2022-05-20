@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+// ***避免按到icon而不是按鈕本身
+i {
+  pointer-events: none;
+}
+
+// 隱藏數字上下按鈕
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.todolist {
+  margin: 20px auto;
+  width: auto;
+  min-width: 250px;
+  max-width: 450px;
+  min-height: 200px;
+  background: linear-gradient(90deg, #ffedaf, #a3d3a1);
+
+  border: 5px solid #a3d3a1;
+  border-radius: 10px;
+}
+
+header {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgba(255, 68, 0, 0.703);
+    font-size: 1.5rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  button {
+    border: none;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    margin: 0.2rem;
+  }
+
+  input[type="number"] {
+    width: 20px;
+    text-align: end;
+  }
+
+  input[type="text"] {
+    width: 60%;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: #285125;
+    color: white;
+    opacity: 0.8;
+  }
+
+  button:hover {
+    opacity: 1;
+  }
+
+  button:active {
+    color: #a3b2a3;
+    background-color: #183116;
+  }
+}
+
+.sort {
+  display: flex;
+  justify-content: end;
+  margin: 5px 5px 8px 0;
+  button {
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #285125;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    opacity: 0.8;
+  }
+  button:hover {
+    opacity: 1;
+  }
+  button:active {
+    color: #a3b2a3;
+    background-color: #183116;
+  }
+}
+
+section {
+  margin-bottom: 5px;
+
+  .todo {
+    margin: 0 5px;
+    margin-top: 5px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.231);
+
+    transition: all 0.1s ease-in-out;
+
+    button {
+      width: 20px;
+      height: 25px;
+      margin-right: 5px;
+      font-size: 15px;
+      text-align: center;
+      color: rgba(255, 68, 0, 0.703);
+      border: 1px solid;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 1.25rem;
+      padding-left: 20px;
+    }
+
+    .todo-time2 {
+      margin-left: 20px;
+    }
+
+    .todo-time1,
+    .todo-text1 {
+      color: #3cad36;
+    }
+    .todo-time2,
+    .todo-text2 {
+      color: #8f4943;
+    }
+  }
+  .done {
+    opacity: 0.5;
+
+    .todo-text1,
+    .todo-text2 {
+      text-decoration: line-through;
+    }
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
