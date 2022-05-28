@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  --font-color: #3f5d45;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  outline: 1px solid #333;
+}
+
+menu {
+  height: 40px;
+  width: 92%;
+  margin: 30px 42px;
+  outline: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > a > img {
+  width: 211px;
+}
+
+ul {
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+
+ul > li {
+  font-size: 16px;
+  font-family: PingFang TC Semibold;
+  font-weight: 900;
+  /* text-shadow: 0.02em 0.02em #3f5d45; */
+  color: var(--font-color);
+
+  border-bottom: 3px solid #3f5d4500;
+  cursor: pointer;
+}
+
+ul > li:hover {
+  border-bottom: 3px solid var(--font-color);
+  transition: 0.3s linear;
+}
+
+/* 購物車icon與menu間距自適應 */
+ul > :nth-child(4) {
+  padding: 8px 8px 5px 8px;
+  margin-left: 10%;
+  height: 24px;
+  width: 24px;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 960px;
+  height: 496px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png);
+  display: flex;
+}
