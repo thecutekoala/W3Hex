@@ -10,6 +10,11 @@ li {
   list-style: none;
 }
 
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   height: 100px;
   display: flex;
@@ -30,14 +35,21 @@ menu {
   width: 211px;
 }
 
-ul {
+.container {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+menu ＞　ul {
   width: 38%;
   display: flex;
   justify-content: space-between;
   line-height: 40px;
 }
 
-ul > li {
+menu > 　ul > li {
   font-size: 16px;
   font-family: PingFang TC Semibold;
   font-weight: 900;
@@ -48,13 +60,12 @@ ul > li {
   cursor: pointer;
 }
 
-ul > li:hover {
+menu > ul > li:hover {
   border-bottom: 3px solid var(--font-color);
   transition: 0.3s linear;
 }
 
-/* 購物車icon與menu間距自適應 */
-ul > :nth-child(4) {
+menu > ul > li :nth-child(4) {
   padding: 8px 8px 5px 8px;
   margin-left: 10%;
   height: 24px;
@@ -63,8 +74,56 @@ ul > :nth-child(4) {
 
 .banner {
   margin: 0 auto;
-  width: 960px;
-  height: 496px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png);
+  width: 91%;
+  height: auto;
+}
+
+.menu {
+  width: 300px;
+}
+
+.menu > ul > li {
+  font-size: 24px;
+  color: var(--font-color);
+  line-height: 65px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #eaf0ed;
+}
+
+.menu > ul > li:nth-child(1) {
+  background-color: var(--font-color);
+  color: #fff;
+}
+
+.menu > ul > li:nth-child(2) {
+  background-color: #eaf0ed;
+}
+
+.section {
+  width: 640px;
+}
+
+.items {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid #333;
+}
+
+.item {
+  margin: 0 0 20px 20px;
+  width: 300px;
+  height: 436px;
+  outline: 1px solid #333;
+}
+
+.item > div:nth-child(1) {
+  width: 300px;
+  height: 385px;
+}
+
+.item > div:nth-child(1) > img {
+  width: 300px;
+  height: 385px;
 }
