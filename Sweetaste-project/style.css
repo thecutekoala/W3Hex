@@ -157,6 +157,7 @@ menu > ul > li :nth-child(4) {
 }
 
 .name {
+  font-size: 20px;
   width: 172px;
   height: 56px;
   text-align: center;
@@ -164,6 +165,7 @@ menu > ul > li :nth-child(4) {
 }
 
 .price {
+  font-size: 20px;
   width: 126px;
   height: 56px;
   text-align: center;
@@ -177,6 +179,8 @@ menu > ul > li :nth-child(4) {
   height: 65px;
   text-align: center;
   line-height: 65px;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .pages {
@@ -193,11 +197,20 @@ menu > ul > li :nth-child(4) {
 }
 
 .pages > ul > li {
+  font-size: 20px;
   width: 60px;
   height: 60px;
   line-height: 60px;
   text-align: center;
   outline: 1px solid var(--subMain-color);
+}
+
+.pages > ul > .right > img {
+  margin: 18px;
+}
+
+.pages > ul > .left > img {
+  margin: 18px;
 }
 
 .pages > ul > .active {
