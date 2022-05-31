@@ -1,14 +1,151 @@
-* {
-  margin: 0;
-  padding: 0;
-  --main-color: #3f5d45;
-  --subMain-color: #eaf0ed;
-}
+/* CSS reset */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
 ol,
 ul,
-li {
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
   list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS begin */
+/* 全域設定 */
+:root {
+  /* customize var here */
+  --main-color: #3f5d45;
+  --subMain-color: #eaf0ed;
+  font-family: PingFang TC Semibold;
+}
+a,
+h1,
+h2,
+h3 {
+  text-decoration: none;
+  color: var(--main-color);
+}
+img {
+  display: block;
+}
+button {
+  border: 0;
+  background-color: none;
 }
 
 .wrap {
@@ -16,23 +153,16 @@ li {
   margin: 0 auto;
 }
 
-header {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  /* outline: 1px solid #333; */
+h1 {
+  padding-right: 40%;
 }
 
 menu {
-  height: 40px;
-  width: 92%;
   margin: 30px 42px;
-  /* outline: 1px solid #333; */
   display: flex;
-  justify-content: space-between;
 }
 
-.logo > a > img {
+.logo a img {
   width: 211px;
 }
 
@@ -40,114 +170,107 @@ menu {
   width: 940px;
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
-menu > ul {
-  width: 38%;
+menu ul {
+  /* width: 38%; */
   display: flex;
-  justify-content: space-between;
-  line-height: 40px;
 }
 
-menu > ul > li {
-  font-size: 16px;
-  font-family: PingFang TC Semibold;
-  font-weight: 900;
-  /* text-shadow: 0.02em 0.02em #3f5d45; */
-  color: var(--main-color);
+menu ul li {
+  margin: 12px 30px;
 
+  font-size: 16px;
+
+  font-weight: bolder;
+
+  text-decoration: none;
   border-bottom: 3px solid #3f5d4500;
   cursor: pointer;
 }
 
-menu > ul > li:hover {
+menu ul li:hover {
   border-bottom: 3px solid var(--main-color);
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
-menu > ul > li :nth-child(4) {
-  padding: 8px 8px 5px 8px;
-  margin-left: 10%;
-  height: 24px;
-  width: 24px;
+menu a .trolley {
+  padding: 0 4px;
+  margin-left: 26px;
+  margin-top: 6px;
+  border-bottom: 3px solid #3f5d4500;
+}
+
+menu a .trolley:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--main-color);
+  transition: 0.2s linear;
 }
 
 .banner {
   margin: 0 auto;
   margin-bottom: 60px;
-  width: 91%;
   height: auto;
-  /* outline: 1px solid #333; */
+  padding: 0 42px;
 }
 
 .menu {
   width: 300px;
-}
-
-.menu > ul > li {
   font-size: 24px;
   color: var(--main-color);
+}
+
+.menu ul li {
   line-height: 65px;
   text-align: center;
   background-color: #fff;
+
   border: 1px solid var(--subMain-color);
+  /* cursor: pointer; */
+}
+
+.menu h2 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 65px;
+  text-align: center;
+  border: 1px solid var(--subMain-color);
+
+  background-color: var(--main-color);
   cursor: pointer;
 }
 
-.menu > ul > li:nth-child(1) {
-  background-color: var(--main-color);
-  color: #fff;
-}
-
-.menu > ul > li:nth-child(2) {
+.menu ul li .active {
   background-color: var(--subMain-color);
 }
 
-.section {
-  position: relative;
-}
-
-.items > ul {
+.items ul {
   display: flex;
   flex-wrap: wrap;
   width: 640px;
-  flex-direction: row;
 }
 
 .item {
-  width: 300px;
-  height: 436px;
   margin-left: 20px;
   margin-bottom: 20px;
   outline: 1px solid var(--subMain-color);
-
-  /* outline: 1px solid #333; */
   color: var(--main-color);
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .pic {
-  width: auto;
-  height: auto;
   position: relative;
-  display: flex;
 }
 
 .star {
-  width: 36px;
-  height: 106.73px;
   background-color: var(--main-color);
   color: var(--subMain-color);
 
   position: absolute;
   top: 0;
   left: 20px;
-  text-align: center;
   writing-mode: vertical-lr;
-  line-height: 36px;
   letter-spacing: 4px;
+  padding: 10px;
 }
 
 .heart {
@@ -156,64 +279,61 @@ menu > ul > li :nth-child(4) {
   right: 22px;
 }
 
-.name {
-  font-size: 20px;
-  width: 172px;
-  height: 56px;
+.product-detail {
+  display: flex;
   text-align: center;
-  line-height: 56px;
+  border: 1px solid var(--subMain-color);
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: 28px;
 }
 
-.price {
-  font-size: 20px;
-  width: 126px;
-  height: 56px;
-  text-align: center;
-  line-height: 56px;
-  border-left: 1px solid var(--subMain-color);
+.product-name {
+  flex: 1;
+  /* 不使用左右 padding，增加文字空間 */
+  padding: 14px 0;
+  border-right: 1px solid var(--subMain-color);
+}
+
+.product-price {
+  font-weight: bold;
+  /* 給予固定寬度，避免文字增加時推擠到空間 */
+  width: 127px;
+  padding: 14px 0;
 }
 
 .add {
   background-color: var(--subMain-color);
-  width: 300px;
-  height: 65px;
-  text-align: center;
-  line-height: 65px;
+  padding: 16px 90px;
   font-size: 24px;
   font-weight: bolder;
 }
 
 .pages {
-  margin: 20px 0;
-  position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.pages > ul {
+.pages ul {
   width: auto;
   display: flex;
-  margin-bottom: 50px;
-  cursor: pointer;
+  margin: 30px 0;
+  /* cursor: pointer; */
 }
 
-.pages > ul > li {
-  font-size: 20px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
+.pages a img {
+  margin: 13px 0;
+  padding: 15px 19px;
   outline: 1px solid var(--subMain-color);
 }
 
-.pages > ul > .right > img {
-  margin: 18px;
+.pages ul li a {
+  font-size: 20px;
+  padding: 16px 26px;
+  outline: 1px solid var(--subMain-color);
 }
 
-.pages > ul > .left > img {
-  margin: 18px;
-}
-
-.pages > ul > .active {
+.pages ul .active {
   color: var(--subMain-color);
   background-color: var(--main-color);
 }
