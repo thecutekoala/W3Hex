@@ -1,0 +1,201 @@
+@media (max-width: 1200px) {
+  // h3字體行高全域變更設定(但相對權重不夠QQ)：
+  h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  // 這部份內推真的醜醜的，所以先在寬1200調整成上下排列
+  .wrap {
+    .section-3 {
+      margin-top: 28px;
+
+      .function-content {
+        flex: none;
+        margin: 0 5.5%;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+        .function-list {
+          justify-content: center;
+
+          .function-item {
+            margin: 0 14px 28px 14px;
+          }
+        }
+
+        .function-title {
+          flex: none;
+          padding: 0 0 32px 0;
+          max-width: none;
+          text-align: center;
+
+          //
+          h3 {
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    // 背景home消失->移至.homePage
+    background-size: 0px, 126px, 135px;
+    background-position: top left,
+      // 第1顆球球新位置：
+      -77px calc(100vh + 75px),
+      // 第2顆球球移到section-2
+      -200px -200px;
+
+    .homePage {
+      // home_svg兩張圖一起
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg),
+        url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+      background-size: 83%, 83%;
+      background-repeat: no-repeat, no-repeat;
+      background-position: center 90%, center 90%;
+
+      .header {
+        justify-content: center;
+        padding-right: 5% min(20px);
+        padding-left: 5% min(20px);
+        border-bottom: 3px solid hsl(44, 100%, 66%);
+        flex-wrap: wrap;
+
+        .logo {
+          flex: 1;
+          a img {
+            height: 24px;
+            padding: 8px 0;
+          }
+        }
+        .btn-red {
+          flex: 1;
+        }
+      }
+
+      .banner {
+        justify-content: center;
+        background: none;
+        margin: 0;
+
+        .theme {
+          padding: 20px;
+
+          :nth-child(1) {
+            color: #56c4c5;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 8px;
+          }
+
+          h2 {
+            font-size: 32px;
+            line-height: 46px;
+            padding-bottom: 16px;
+          }
+
+          :nth-child(3) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .section-1 {
+      margin-top: 60px;
+
+      .sns-content {
+        margin: 0 5.5%;
+
+        .sns-list {
+          .sns-item {
+            img {
+              width: 60px;
+              margin: 32px 84px 16px 84px;
+            }
+
+            .sns-name {
+              line-height: 26px;
+              font-size: 18px;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-2 {
+      margin-top: 60px;
+
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+      background-repeat: no-repeat;
+      background-size: 135px;
+      background-position: calc(100% + 47px) 100%;
+
+      .role-content {
+        margin: 0 5.5%;
+        padding-bottom: 32px;
+
+        p {
+          font-size: 20px;
+          color: #221e1f;
+          padding-bottom: 40px;
+          line-height: 29px;
+        }
+
+        .role-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    .section-4 {
+      margin-top: 32px;
+
+      background-size: 153px;
+      background-position: -76px 40px;
+
+      .feedback-content {
+        margin: 0 5.5%;
+
+        .feedback-Box {
+          margin-top: 32px;
+          justify-content: center;
+
+          .feedback-item {
+            .feedback-message {
+              padding: 48px 17px 16px 16px;
+            }
+          }
+
+          // 技術不佳swiper部分先讓我這樣跳過 QQ
+          li:not(.active) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 60px;
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+
+      h3 {
+        font-size: 24px;
+        padding-top: 293px;
+        padding-bottom: 24px;
+      }
+
+      button {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

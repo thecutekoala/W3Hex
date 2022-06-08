@@ -1,0 +1,418 @@
+.wrap {
+  max-width: 1366px;
+
+  // section-01 background-img
+  background-image: 
+		// 背景1：右上home01
+    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg),
+    // 背景2：球球1
+    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg),
+    // 背景3：球球2
+    url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+
+  background-size: auto, 360px, 310px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right,
+    // 球球 1 位置：
+    -222px calc(100vh - 180px),
+    // 球球 2 位置：(垂直方向為 (.homePage + .section-1 +.section-2)高度 - 與.section-2相對位置而得)
+    calc(100% + 100px)
+      calc(100vh + 415px + 627px - calc(1105px + 310px - 834px - 412px));
+  background-clip: padding-box, padding-box, padding-box;
+
+  // 方案費用全域樣式：
+  .program-path {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  // 正文開始：
+  // 1. 首頁
+  .homePage {
+    height: 100vh;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 10%;
+
+      .logo a img {
+        height: 40px;
+      }
+    }
+
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1085px;
+      margin: 30px 10.3%;
+
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg);
+
+      background-size: 532px 534px;
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-clip: padding-box;
+
+      .theme {
+        max-width: 451px;
+        padding: 158px 0;
+
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.6);
+
+        :nth-child(1) {
+          color: #56c4c5;
+          font-size: 18px;
+          line-height: 26px;
+          padding-bottom: 8px;
+        }
+
+        h2 {
+          line-height: 70px;
+          padding-bottom: 16px;
+        }
+
+        :nth-child(3) {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+
+      .home {
+        width: 534px;
+      }
+    }
+  }
+
+  // 2. 平台頁(sns-)
+  .section-1 {
+    margin-top: 100px;
+
+    .sns-content {
+      margin: 0 14.6%;
+      text-align: center;
+
+      h3 {
+        line-height: 46px;
+      }
+
+      .sns-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .sns-item {
+          width: 244px;
+          text-align: center;
+
+          img {
+            width: 90px;
+            margin: 48px 75px 24px 75px;
+          }
+
+          p {
+            line-height: 24px;
+          }
+
+          .sns-name {
+            line-height: 35px;
+            font-size: 24px;
+            font-weight: bolder;
+            margin-bottom: 24px;
+          }
+          .sns-bref {
+            color: #747474;
+          }
+        }
+      }
+    }
+  }
+
+  // 3. 角色頁(role-)
+  .section-2 {
+    margin-top: 100px;
+
+    .role-content {
+      margin: 0 8.5%;
+      text-align: center;
+
+      h3 {
+        padding-bottom: 16px;
+        font-weight: bolder;
+        line-height: 46px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 29px;
+        padding-bottom: 40px;
+      }
+
+      .role-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .role-item {
+          box-shadow: 0 0 8px #ddd;
+          border-radius: 12px;
+          margin: 8px 8px;
+          background-color: #fff;
+          box-sizing: border-box;
+
+          img {
+            width: 260px;
+            border-radius: 12px 12px 0 0;
+          }
+
+          h4 {
+            font-size: 16px;
+            color: #56c4c5;
+            line-height: 24px;
+            padding: 16px 0;
+          }
+
+          p {
+            font-size: 16px;
+            color: #221e1f;
+            line-height: 24px;
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  // 4. 功能頁(function-)
+  .section-3 {
+    margin-top: 100px;
+
+    .function-content {
+      margin: 0 13.7% 0 9%;
+      display: flex;
+      justify-content: space-between;
+
+      .function-list {
+        // 將 .function-content 對半分，盡可能讓 .function-item 維持兩列
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+
+        .function-item {
+          margin: 0 28px 28px 0;
+          padding: 32px 32px 48px 32px;
+          box-shadow: 0 0 8px #ddd;
+
+          .function-icon {
+            height: 86px;
+            width: 86px;
+            box-shadow: 0 0 8px #ddd;
+            border-radius: 43px;
+            display: flex;
+
+            img {
+              margin: auto;
+              align-items: center;
+            }
+          }
+
+          h4 {
+            font-size: 18px;
+            font-weight: bolder;
+            line-height: 32px;
+            margin-top: 24px;
+          }
+
+          p {
+            // 這邊寬度不定 不知道怎麼跟設計稿一致
+            width: 166px;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 16px;
+          }
+        }
+      }
+
+      .function-title {
+        max-width: 395px;
+        flex: 1;
+        padding: 165px 0 164px 0;
+        font-size: 24px;
+
+        h3 {
+          line-height: 46px;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  // 5. 回饋頁 (feedback-)
+  .section-4 {
+    margin-top: 92px;
+
+    // 球球3
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 50px 40px;
+
+    .feedback-content {
+      text-align: center;
+      margin: 0 9%;
+
+      h3 {
+        line-height: 42px;
+      }
+
+      .feedback-Box {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .feedback-item {
+          max-width: 352px;
+          position: relative;
+
+          .user01 {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user01.jpg?raw=true);
+          }
+
+          .user02 {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user02.jpg?raw=true);
+          }
+
+          .user03 {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user03.jpg?raw=true);
+          }
+
+          // 回饋頭像用positoin定位
+          .user {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+
+            background-size: 80px;
+            background-repeat: no-repeat;
+
+            position: absolute;
+            left: 36px;
+            // overflow: auto;
+          }
+
+          .feedback-message {
+            margin-top: 56px;
+            padding: 48px 32px 24px 32px;
+
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 8px #ddd;
+
+            .feedback-brief {
+              line-height: 24px;
+            }
+
+            hr {
+              margin: 12px 0;
+            }
+
+            .feedback-from {
+              text-align: start;
+
+              p {
+                font-size: 16px;
+                font-weight: bolder;
+                line-height: 24px;
+                padding-bottom: 8px;
+              }
+
+              .feedback-rating {
+                display: flex;
+                justify-content: space-between;
+
+                .feedback-title {
+                  font-weight: normal;
+                  padding-bottom: 0;
+                }
+
+                .feedback-stars {
+                  display: flex;
+
+                  img {
+                    width: 16px;
+                    padding: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .feedback-pointBox {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin-left: 8px;
+          margin-right: 8px;
+
+          width: 10px;
+          height: 10px;
+          background-color: #dddddd;
+          border-radius: 5px;
+
+          cursor: pointer;
+        }
+
+        .active {
+          width: 16px;
+          background-color: #ffd153;
+        }
+      }
+    }
+  }
+
+  // 6. 頁腳
+  .footer {
+    margin-top: 100px;
+    text-align: center;
+
+    // 背景
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg),
+      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/talk01.svg),
+      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/talk02.svg),
+      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/talk03.svg),
+      url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/talk04.svg);
+    background-repeat: no-repeat;
+    background-size: 100%, auto, auto, auto, auto;
+
+    h3 {
+      padding-top: 260px;
+      padding-bottom: 48px;
+    }
+
+    button {
+      margin-bottom: 100px;
+    }
+  }
+
+  // 7. 版權
+  .cobyright {
+    font-size: 14px;
+    background-color: #f5f5f5;
+    padding: 16px 0;
+    line-height: 24px;
+    text-align: center;
+  }
+}
