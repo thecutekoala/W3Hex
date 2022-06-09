@@ -50,6 +50,14 @@
       // 第2顆球球移到section-2
       -200px -200px;
 
+    .toTop {
+      height: 50px;
+      width: 50px;
+      right: 16px;
+      bottom: 16px;
+      line-height: 50px;
+    }
+
     .homePage {
       // home_svg兩張圖一起
       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg),
