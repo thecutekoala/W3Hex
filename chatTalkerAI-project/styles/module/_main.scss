@@ -26,6 +26,9 @@
     color: #fff;
     cursor: pointer;
   }
+  .program-path:hover {
+    opacity: 0.6;
+  }
 
   .toTop {
     height: 71px;
@@ -42,6 +45,9 @@
     font-weight: bolder;
     text-align: center;
     line-height: 71px;
+  }
+  .toTop:hover {
+    opacity: 0.6;
   }
 
   // 正文開始：

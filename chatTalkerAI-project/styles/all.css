@@ -231,6 +231,10 @@ li {
   cursor: pointer;
 }
 
+.wrap .program-path:hover {
+  opacity: 0.6;
+}
+
 .wrap .toTop {
   height: 71px;
   width: 71px;
@@ -244,6 +248,10 @@ li {
   font-weight: bolder;
   text-align: center;
   line-height: 71px;
+}
+
+.wrap .toTop:hover {
+  opacity: 0.6;
 }
 
 .wrap .homePage {
