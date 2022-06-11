@@ -271,6 +271,7 @@ menu a .trolley:hover {
   writing-mode: vertical-lr;
   letter-spacing: 4px;
   padding: 10px;
+  text-align: center;
 }
 
 .heart {

@@ -657,7 +657,7 @@ li {
   padding-bottom: 48px;
 }
 
-.wrap .footer button {
+.wrap .footer input {
   margin-bottom: 100px;
 }
 
@@ -849,7 +849,7 @@ li {
     padding-top: 293px;
     padding-bottom: 24px;
   }
-  .wrap .footer button {
+  .wrap .footer input {
     margin-bottom: 60px;
   }
 }
