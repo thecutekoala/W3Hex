@@ -7,7 +7,7 @@
 
   // 這部份內推真的醜醜的，所以先在寬1200調整成上下排列
   .wrap {
-    .section-3 {
+    .section-functions {
       margin-top: 28px;
 
       .function-content {
@@ -72,6 +72,7 @@
         padding-left: 5% min(20px);
         border-bottom: 3px solid hsl(44, 100%, 66%);
         flex-wrap: wrap;
+        background-color: #fff;
 
         .logo {
           flex: 1;
@@ -80,9 +81,9 @@
             padding: 8px 0;
           }
         }
-        .btn-red {
-          flex: 1;
-        }
+        // .btn-red {
+        //   flex: 1;
+        // }
       }
 
       .banner {
@@ -114,7 +115,7 @@
       }
     }
 
-    .section-1 {
+    .section-sns {
       margin-top: 60px;
 
       .sns-content {
@@ -137,7 +138,7 @@
       }
     }
 
-    .section-2 {
+    .section-roles {
       margin-top: 60px;
 
       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
@@ -164,7 +165,7 @@
       }
     }
 
-    .section-4 {
+    .section-feedback {
       margin-top: 32px;
 
       background-size: 153px;

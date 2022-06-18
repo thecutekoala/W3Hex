@@ -1,5 +1,5 @@
 .wrap {
-  max-width: 1366px;
+  // max-width: 1366px;  <-.wrap 在設計稿為滿版設定，記得別設定
 
   // section-01 background-img
   background-image: 
@@ -92,7 +92,7 @@
           padding-bottom: 8px;
         }
 
-        h2 {
+        :nth-child(2) {
           line-height: 70px;
           padding-bottom: 16px;
         }
@@ -110,11 +110,11 @@
   }
 
   // 2. 平台頁(sns-)
-  .section-1 {
+  .section-sns {
     margin-top: 100px;
 
     .sns-content {
-      margin: 0 14.6%;
+      margin-left: 139px;
       text-align: center;
 
       h3 {
@@ -135,10 +135,6 @@
             margin: 48px 75px 24px 75px;
           }
 
-          p {
-            line-height: 24px;
-          }
-
           .sns-name {
             line-height: 35px;
             font-size: 24px;
@@ -154,11 +150,12 @@
   }
 
   // 3. 角色頁(role-)
-  .section-2 {
+  .section-roles {
     margin-top: 100px;
 
     .role-content {
-      margin: 0 8.5%;
+      margin-left: 139px;
+      margin-right: 139px;
       text-align: center;
 
       h3 {
@@ -175,13 +172,13 @@
 
       .role-list {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .role-item {
           box-shadow: 0 0 8px #ddd;
           border-radius: 12px;
-          margin: 8px 8px;
+          margin-bottom: 24px;
           background-color: #fff;
           box-sizing: border-box;
 
@@ -200,7 +197,6 @@
           p {
             font-size: 16px;
             color: #221e1f;
-            line-height: 24px;
             padding-bottom: 24px;
           }
         }
@@ -209,11 +205,12 @@
   }
 
   // 4. 功能頁(function-)
-  .section-3 {
+  .section-functions {
     margin-top: 100px;
 
     .function-content {
-      margin: 0 13.7% 0 9%;
+      margin-left: 139px;
+      margin-right: 188px;
       display: flex;
       justify-content: space-between;
 
@@ -226,7 +223,8 @@
         .function-item {
           margin: 0 28px 28px 0;
           padding: 32px 32px 48px 32px;
-          box-shadow: 0 0 8px #ddd;
+          box-shadow: 0 0 12px #ddd;
+          border-radius: 12px;
 
           .function-icon {
             height: 86px;
@@ -279,7 +277,7 @@
   }
 
   // 5. 回饋頁 (feedback-)
-  .section-4 {
+  .section-feedback {
     margin-top: 92px;
 
     // 球球3
@@ -291,7 +289,8 @@
 
     .feedback-content {
       text-align: center;
-      margin: 0 9%;
+      margin-left: 139px;
+      margin-right: 139px;
 
       h3 {
         line-height: 42px;
@@ -344,6 +343,9 @@
 
             .feedback-brief {
               line-height: 24px;
+              border-bottom: 3px solid #eee;
+              margin-bottom: 10.5px;
+              padding-bottom: 10.5px;
             }
 
             hr {
@@ -356,7 +358,6 @@
               p {
                 font-size: 16px;
                 font-weight: bolder;
-                line-height: 24px;
                 padding-bottom: 8px;
               }
 

@@ -86,7 +86,8 @@ video {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
+  // 可惡..我怎麼沒想到....
 }
 
 article,
@@ -192,12 +193,12 @@ h6 {
   text-decoration: none;
 }
 
-h2 {
+.fsz-48 {
   font-size: 48px;
   font-weight: bolder;
 }
 
-h3 {
+.fsz-32 {
   font-size: 32px;
   font-weight: bolder;
 }
