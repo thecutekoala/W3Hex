@@ -1,0 +1,23 @@
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 640px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.card img {
+  margin: 0 20px 24px 0;
+}
+
+.ad img {
+  margin-left: 20px;
+}

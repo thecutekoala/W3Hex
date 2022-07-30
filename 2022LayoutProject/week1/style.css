@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", "Noto Sans TC";
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+hr {
+  width: 1200px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0;
+  height: 1px;
+}
+
+li {
+  margin: 8px 0 24px 0;
+}
+
+.photo {
+  margin-top: 48px;
+}
+
+.title {
+  margin: 40px 0 24px 0;
+  font-size: 90px;
+  line-height: 95px;
+}
+
+.border {
+  border-top: 2px solid #000;
+}
+
+.subtitle {
+  padding-bottom: 8px;
+  display: flexbox;
+  margin-top: 48px;
+}
+
+.subtitle h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle h2 span {
+  margin-left: 16px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #a00404;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.skill {
+  margin-top: 24px;
+}
+
+.skill h2 span,
+.contact h2 span {
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: #415165;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.bg-blue hr {
+  width: 996px;
+  margin-bottom: 40px;
+  border-top: 1px solid #fff;
+}
+
+.bg-blue div {
+  display: flex;
+  align-items: center;
+}
+
+.bg-blue div hr {
+  height: 300px;
+  width: 1px;
+}
+
+.border-left {
+  border-left: 1px solid #96a9c4;
+  padding: 0 24px;
+  margin: 0 24px 40px 24px;
+}
+
+.bg-blue div ul li {
+  margin: 8px 0;
+}
+
+.bg-blue div ul .skill-first {
+  margin-top: 0;
+}
+
+.bg-blue div ul .skill-last {
+  margin-bottom: 0;
+}
+
+.experience {
+  margin-top: 64px;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+.fw-bolder p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.contact {
+  margin-top: 24px;
+}
+
+.contact-list {
+  text-align: center;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon li {
+  margin: 0 12px 40px 12px;
+}
