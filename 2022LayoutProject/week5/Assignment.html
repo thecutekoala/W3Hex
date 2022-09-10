@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W5-Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <!-- Google icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <!-- 自定義 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container d-flex  m-0 p-0">
+    <aside class="bg-light d-flex flex-column justify-content-between align-items-start vh-100" style="width:400px;">
+      <div>
+        <h1 style="width: 300px;" class="ps-3 ms-3 mt-3 pt-3 mt-0">
+          <a href="#"><img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/5d91d2de215d774a360093b4739a960a9ba68be0/week5/logo-ANSWER.svg"
+              alt="ANSWER.svg"></a>
+        </h1>
+        <ul class="list-unstyled mt-3 pt-3 text-black fw-bolder">
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">assessment</span></div>
+              <div><span>Dashboard</span></div>
+            </a>
+          </li>
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">question_answer</span></div>
+              <div><span>Question</span></div>
+            </a>
+          </li>
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">assignment</span></div>
+              <div><span>Assignment</span></div>
+            </a>
+          </li>
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">video_library</span></div>
+              <div><span>Course</span></div>
+            </a>
+          </li>
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">people</span></div>
+              <div><span>Admin</span></div>
+            </a>
+          </li>
+          <li class="mb-4 ps-5">
+            <a href="#" class="d-flex align-items-center text-reset text-decoration-none">
+              <div><span class="material-symbols-outlined me-3 lh-base">settings</span></div>
+              <div><span>Settings</span></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center ms-3 ps-3 pb-3 mb-3">
+        <div class="mb-4">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+            alt="andychen.jpeg" class="img-fluid rounded-circle" style="width: 40px; height: 40px;">
+        </div>
+        <div class="ms-3">
+          <p class="card-title m-0">Andy Chen</p>
+          <p class="card-text"><small class="text-muted">andy0401@mail.com</small></p>
+        </div>
+      </div>
+    </aside>
+    <article>
+      <nav class="d-flex justify-content-between my-4 ">
+        <div class="d-flex align-items-center text-center">
+          <h2 class="fs-3 mx-4 mb-0 fw-bolder">Assignment</h2>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              All Courses
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tools text-end">
+          <span class="material-symbols-outlined">search</span>
+          <span class="material-symbols-outlined ms-4">notifications_active</span>
+        </div>
+      </nav>
+      <div class="list-group ms-4">
+        <div class="d-flex justify-content-between">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All(4)
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <span style="font-size:12px;" class="py-2 text-muted">2 comments</span>
+        </div>
+        <section class="d-flex">
+          <div class="card-group d-flex flex-column" style="height:276px;">
+            <div class="card bg-light" style="width: 320px;">
+              <div class="card-body p-1 m-2">
+                <div class="d-flex justify-content-between">
+                  <p class="card-text mb-1" style="font-size:.75rem;">Chapter Assignment 2</p>
+                  <p class="card-text text-muted " style=" font-size:.75rem;">4 hrs ago</p>
+                </div>
+                <div class=" d-flex justify-content-between ">
+                  <h5 class=" card-title fs-6 fw-bolder mb-0">Please check this file…</h5>
+                  <p class="card-text text-muted" style="font-size:.75rem;">Emily Wang</p>
+                </div>
+              </div>
+            </div>
+            <div class="card border" style="width: 320px;">
+              <div class="card-body p-1 m-2">
+                <div class="d-flex justify-content-between">
+                  <p class="card-text mb-1" style="font-size:.75rem;">Chapter Assignment 1</p>
+                  <p class="card-text text-muted " style=" font-size:.75rem;">12 hrs ago</p>
+                </div>
+                <div class=" d-flex justify-content-between ">
+                  <h5 class=" card-title fs-6 fw-bolder mb-0">My Homework</h5>
+                  <p class="card-text text-muted" style="font-size:.75rem;">David Xu</p>
+                </div>
+              </div>
+            </div>
+            <div class="card border" style="width: 320px;">
+              <div class="card-body p-1 m-2">
+                <div class="d-flex justify-content-between">
+                  <p class="card-text mb-1" style="font-size:.75rem;">Final Assignment</p>
+                  <p class="card-text text-muted " style=" font-size:.75rem;">18 hrs ago</p>
+                </div>
+                <div class=" d-flex justify-content-between ">
+                  <h5 class=" card-title fs-6 fw-bolder mb-0">Have a problem with this…</h5>
+                  <p class="card-text text-muted" style="font-size:.75rem;">Tony Wei</p>
+                </div>
+              </div>
+            </div>
+            <div class="card border" style="width: 320px;">
+              <div class="card-body p-1 m-2">
+                <div class="d-flex justify-content-between">
+                  <p class="card-text mb-1" style="font-size:.75rem;">Final Assignment</p>
+                  <p class="card-text text-muted " style=" font-size:.75rem;">19 hrs ago</p>
+                </div>
+                <div class=" d-flex justify-content-between ">
+                  <h5 class=" card-title fs-6 fw-bolder mb-0">Did I do it right?</h5>
+                  <p class="card-text text-muted" style="font-size:.75rem;">Christina Lin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="ms-3" style="width:584px;">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between py-2">
+                <div>
+                  <p class="text-muted mb-1" style="font-size:12px;">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bolder mb-0">Please check this file for me, thanks!</p>
+                </div>
+                <div class="more"><span class="material-symbols-outlined m-0 text-center lh-lg">more_vert</span></div>
+              </div>
+              <div class="card-body me-3">
+                <div class="d-flex">
+                  <div class="me-2">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg"
+                      class="rounded-circle" style="width: 40px; height: 40px;" alt="emilywang.jpeg">
+                  </div>
+                  <div class="EmilyWang">
+                    <h5 class="card-title fw-bolder">Emily Wang</h5>
+                    <p class="text-muted" style="font-size:12px;">
+                      <small>10:38 AM (4 hours ago)</small>
+                    </p>
+                    <p class="card-text" style="width: 488px;">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                      question: Why in the following code the height of the
+                      <span class="text-success">div</span>
+                      is bigger than the height of the
+                      <span class="text-success">img</span>
+                      ?
+                      There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or
+                      extra space below image?
+                    </p>
+                    <div class="d-flex border bg-light align-items-center" style="width: 176px;">
+                      <div><span class="material-symbols-outlined m-0 text-center lh-base">attach_file</span></div>
+                      <div><span class="fs-6 fw-bolder">HW-2-David.zip</span></div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex">
+                  <div class="me-2">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+                      class="rounded-circle" style="width: 40px; height: 40px;" alt="andychen.jpeg">
+                  </div>
+                  <div class="AndyChen">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5 class="card-title fw-bolder">Andy Chen (You)</h5>
+                        <p class="text-muted" style="font-size:12px;">
+                          <small>13:24 AM (1 hours ago)</small>
+                        </p>
+                      </div>
+                      <div class="edit">
+                        <span class="material-symbols-outlined me-3">
+                          star
+                        </span>
+                        <span class="material-symbols-outlined">
+                          edit
+                        </span>
+                      </div>
+                    </div>
+
+                    <p class="card-text" style="width: 488px;">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.</p>
+                    <p>You can:</p>
+                    <ul>
+                      <li>adjust the
+                        <span class="text-success">vertical-align</span>
+                        of the image to position it elsewhere (e.g.
+                        the <span class="text-success">middle</span> ) or
+                      </li>
+                      <li>change the <span class="text-success">display</span> so it isn’t inline
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="d-flex justify-content-between mt-3">
+              <ul class="pagination fs-4">
+                <li class="page-item ">
+                  <a class="page-link  border-0 text-black " href="#" aria-label="Previous">
+                    <span aria-hidden="true">&lt;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 text-black " href="#" aria-label="Next">
+                    <span aria-hidden="true">&gt;</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="button-group">
+                <button type="button" class="btn btn-white btn-base border border-successpx-4 text-success me-2">Mark as
+                  read</button>
+                <button type="button" class="btn btn-success btn-base  px-4 ms-2">Reply</button>
+              </div>
+            </footer>
+          </section>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

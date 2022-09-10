@@ -1,0 +1,41 @@
+:root {
+	--enable-negative-margins: true
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+aside .list-unstyled .mb-4 {
+	border-left: 4px solid transparent;
+	transition: ease-in-out .35s;
+}
+
+aside .list-unstyled .mb-4:hover {
+	color: var(--bs-success);
+	border-left: 4px solid var(--bs-success);
+}
+
+nav .material-symbols-outlined,
+.card .card-header .more,
+.card .card-body .edit span {
+	transition: ease-in-out .15s;
+	cursor: pointer;
+}
+
+nav .material-symbols-outlined:hover {
+	transform: scale(1.3);
+	color: var(--bs-success);
+	font-weight: bolder;
+}
+
+.card .card-header .more:hover {
+	transform: scale(1.3);
+	color: var(--bs-success);
+	font-weight: bolder;
+}
+
+.card .card-body .edit span:active {
+	background-color: var(--bs-success);
+	color: var(--bs-light);
+}
