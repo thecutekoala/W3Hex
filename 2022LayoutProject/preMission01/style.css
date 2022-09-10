@@ -1,0 +1,224 @@
+/* 0. reset */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "PingFangTC-Medium", "SF Pro Text";
+}
+
+/* 1. 通用樣式 */
+
+.w-1200 {
+  width: 1200px;
+}
+
+/* 1-1. 間距 */
+.pdt-16 {
+  padding-top: 16px;
+}
+
+.pdt-20 {
+  padding-top: 20px;
+}
+
+.pdt-24 {
+  padding-top: 24px;
+}
+
+.pdt-32 {
+  padding-top: 32px;
+}
+
+.pdt-48 {
+  padding-top: 48px;
+}
+
+.pdt-72 {
+  padding-top: 72px;
+}
+
+.pdb-24 {
+  padding-bottom: 24px;
+}
+
+.pdb-48 {
+  padding-bottom: 48px;
+}
+
+.pdb-72 {
+  padding-bottom: 72px;
+}
+
+.pdr-16 {
+  padding-right: 16px;
+}
+
+/* 1-2. 文字 */
+.fsz-80 {
+  font-size: 80px;
+  line-height: 95px;
+}
+
+.fsz-20 {
+  font-size: 20px;
+}
+
+.fsz-32 {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.fsz-24 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.lh-33 {
+  line-height: 33px;
+}
+
+.lh-36 {
+  line-height: 36px;
+}
+
+.fc-red {
+  color: #a00404;
+}
+
+.fc-white {
+  color: #fff;
+}
+
+.fw-lighter {
+  font-weight: lighter;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+/* 1-3. 外框 */
+
+.bdb-1-black {
+  border-bottom: 1px solid #000;
+}
+
+/* 1-4. 彈性盒 */
+
+.d-flex {
+  display: flex;
+}
+
+.fld-column {
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+/* 2. 個別調整 */
+
+.container {
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+}
+
+.toTop {
+  width: 75px;
+  height: 75px;
+  border: 2px solid #fff;
+  border-radius: 37.5px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.header {
+  border-bottom: 2px solid #000;
+}
+
+.name {
+  width: 274px;
+}
+
+.topic {
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.skill,
+.footer,
+.toTop {
+  background-color: #415165;
+}
+
+.skill {
+  padding-bottom: 52px;
+}
+
+.skill .topic {
+  width: 996px;
+  border-color: #fff;
+}
+
+.list {
+  padding-left: 24px;
+  border-left: 1px solid #96a9c4;
+}
+
+.workExp .list {
+  margin-left: 24px;
+}
+
+.workExp .list li {
+  width: 642px;
+}
+
+.workExp .list li img {
+  padding: 8px 0;
+}
+
+.footer .topic {
+  border-color: #fff;
+}
+
+.footer ol {
+  width: 192px;
+}
+
+.footer ul li a:hover,
+.footer ol li a:hover,
+.toTop:hover {
+  opacity: 0.6;
+}
